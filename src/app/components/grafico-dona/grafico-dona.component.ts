@@ -9,9 +9,12 @@ import { ChartType } from 'chart.js';
 })
 export class GraficoDonaComponent implements OnInit {
 
+// tslint:disable-next-line: no-input-rename
   @Input('ChartLabels') dChartLabels: Label[] = [];
+// tslint:disable-next-line: no-input-rename
   @Input('ChartData') dChartData: MultiDataSet =  [];
-  @Input('ChartType') dChartType: ChartType = '';
+// tslint:disable-next-line: no-input-rename
+  @Input('ChartType') dChartType: ChartType = 'doughnut';
 
   constructor() { }
 
