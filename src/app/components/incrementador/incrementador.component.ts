@@ -17,16 +17,13 @@ export class IncrementadorComponent implements OnInit {
 
 
   constructor() {
-    console.log('leyenda: ' + this.leyenda);
-    console.log('progreso: ' + this.progreso);
+
   }
 
   ngOnInit() {
   }
 
   onChanges(newValue: number) {
-    console.log(newValue);
-
     // let elemHTML: any = document.getElementsByName('progreso')[0];
 
     if (this.progreso >= 100) {
