@@ -15,7 +15,10 @@ const swal: SweetAlert = _swal as any;
 })
 export class UsuarioService {
 
+  // Usuario logueado
   usuario: Usuario;
+
+  // token de usuario logueado
   token: string;
 
   constructor(public http: HttpClient,
@@ -116,6 +119,7 @@ export class UsuarioService {
           }));
    }
 
+   // cambiar imagen de usuario logueado
    cambiarImagen(archivo: File, id: string) {
       this._subirArchivoService.subirArchivo(archivo, 'usuarios', id)
           .then( (resp: any) => {
@@ -150,7 +154,7 @@ export class UsuarioService {
     return  this.http.delete(url)
               .pipe(
                 map((resp: any) => {
-                  swal('Usuario borrado','El usuario ha sido eliminado correctamente', 'success');
+                  swal('Usuario borrado', 'El usuario ha sido eliminado correctamente', 'success');
                   return true;
                 }));
   }

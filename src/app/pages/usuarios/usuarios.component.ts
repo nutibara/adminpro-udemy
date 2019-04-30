@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuario.model';
-import { URL_SERVICIOS } from '../../config/config';
 import { UsuarioService } from '../../services/service.index';
 import * as _swal from 'sweetalert';
 import { SweetAlert } from 'sweetalert/typings/core';
@@ -33,7 +32,7 @@ export class UsuariosComponent implements OnInit {
             .subscribe(resp => this.cargarUsuarios());
   }
 
-  mostrarModal ( id: string) {
+  mostrarModal( id: string) {
     this._modalUploadService.mostrarModal('usuarios', id);
   }
 
@@ -48,7 +47,7 @@ export class UsuariosComponent implements OnInit {
   }
 
   cambiarDesde(valor: number) {
-    let desde = this.desde + valor;
+    const desde = this.desde + valor;
 
     if (desde >= this.totalRegistros) {
       return;
