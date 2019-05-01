@@ -30,7 +30,7 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let medico of medicos">
-                            <td> <img [src]="medico.img | imagen:'medico'" class="img-50 img-circle pointer"></td>
+                            <td class="w70"> <img [src]="medico.img | imagen:'medico'" class="img-50 img-circle pointer"></td>
                             <td>{{medico.nombre}}</td>
                             <td>{{medico.hospital.nombre}}</td>
                             <td>

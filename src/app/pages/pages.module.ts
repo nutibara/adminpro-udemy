@@ -31,6 +31,7 @@ import { HospitalesComponent } from './hospitales/hospitales.component';
 import { CrearHospitalComponent } from '../components/crear-hospital/crear-hospital.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { MedicoComponent } from './medicos/medico.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { MedicoComponent } from './medicos/medico.component';
         HospitalesComponent,
         CrearHospitalComponent,
         MedicosComponent,
-        MedicoComponent
+        MedicoComponent,
+        BusquedaComponent
       ],
       exports: [
         DashboardComponent,
