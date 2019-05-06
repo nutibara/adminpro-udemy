@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CrearHospitalService } from './crear-hospital.service';
 import { HospitalService } from '../../services/service.index';
 
-import * as _swal from 'sweetalert';
-import { SweetAlert } from 'sweetalert/typings/core';
+// import * as _swal from 'sweetalert';
+// import { SweetAlert } from 'sweetalert/typings/core';
 
-declare var swal: any;
+// declare var swal: any;
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-crear-hospital',

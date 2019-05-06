@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../services/service.index';
 import { Usuario } from 'src/app/models/usuario.model';
 
-import * as _swal from 'sweetalert';
-import { SweetAlert } from 'sweetalert/typings/core';
-const swal: SweetAlert = _swal as any;
+// import * as _swal from 'sweetalert';
+// import { SweetAlert } from 'sweetalert/typings/core';
+// const swal: SweetAlert = _swal as any;
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-profile',

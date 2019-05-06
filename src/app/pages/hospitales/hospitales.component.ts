@@ -4,11 +4,12 @@ import { ModalUploadService } from '../../components/modal-upload/modal-upload.s
 import { HospitalService } from 'src/app/services/service.index';
 
 import * as _swal from 'sweetalert';
-import { SweetAlert } from 'sweetalert/typings/core';
+// import { SweetAlert } from 'sweetalert/typings/core';
 import { CrearHospitalService } from '../../components/crear-hospital/crear-hospital.service';
 
 declare var swal: any;
 // const swal: SweetAlert = _swal as any;
+// import swal from 'sweetalert';
 
 @Component({
   selector: 'app-hospitales',

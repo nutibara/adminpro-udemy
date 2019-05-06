@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from 'src/app/config/config';
 import { map } from 'rxjs/operators';
-import * as _swal from 'sweetalert';
-import { SweetAlert } from 'sweetalert/typings/core';
+// import * as _swal from 'sweetalert';
+// import { SweetAlert } from 'sweetalert/typings/core';
 import { UsuarioService } from '../usuario/usuario.service';
 import { Medico } from 'src/app/models/medico.model';
 
-const swal: SweetAlert = _swal as any;
+// const swal: SweetAlert = _swal as any;
+import swal from 'sweetalert';
 
 @Injectable({
   providedIn: 'root'

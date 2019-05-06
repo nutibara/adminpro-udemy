@@ -9,7 +9,7 @@ import { Medico } from 'src/app/models/medico.model';
 })
 export class MedicosComponent implements OnInit {
 
-  medicos: Medico[] =[];
+  medicos: Medico[] = [];
 
   constructor(public _medicoService: MedicoService) { }
 
